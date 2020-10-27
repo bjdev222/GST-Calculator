@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GST Calculator</string>
+    <string name="addgst">
+
+        <b>Add GST \n\nGST Amount</b>
+        <b>=</b>
+        \n<b>(Original Cost x GST%)/100</b>
+        \n
+      \n<b>Final Amount = </b>
+        \n<b>Original Cost + GST Amount.</b></string>
+    <string name="rmgst">
+
+        <b>Remove GST \n\nGST Amount</b>
+        <b>=</b>
+        \n<b>Original Cost – [Original Cost x {100/(100+GST%)}]</b>
+        \n
+      \n<b>Final Amount = </b>
+        \n<b>Original Cost – GST Amount</b></string>
+</resources>

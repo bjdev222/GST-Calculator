@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#bfd9d8"
+    android:padding="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#4d4846"
+        android:fontFamily="sans-serif-medium"
+        android:text="Enter Amount"></TextView>
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"></Space>
+    <EditText
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        android:padding="3dp"
+        android:id="@+id/amt"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"></EditText>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#4d4846"
+            android:fontFamily="sans-serif-medium"
+            android:text="Enter GST(%)"></TextView>
+
+        <Space
+            android:layout_width="21dp"
+            android:layout_height="wrap_content"></Space>
+
+        <EditText
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg2"
+            android:padding="3dp"
+            android:id="@+id/gst"
+            android:textSize="18sp"
+            android:inputType="numberDecimal"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#4d4846"
+            android:fontFamily="sans-serif-medium"            android:text="GST Amount"></TextView>
+
+        <Space
+            android:layout_width="27dp"
+            android:layout_height="wrap_content"></Space>
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+
+            android:id="@+id/gstamt"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#4d4846"
+            android:fontFamily="sans-serif-medium"
+            android:text="Final Amount"></TextView>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"></Space>
+
+        <TextView
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg"
+            android:padding="3dp"
+            android:textSize="18sp"
+            android:textColor="#ff0000"
+            android:textStyle="bold"
+
+
+            android:id="@+id/finalamt"></TextView>
+
+    </LinearLayout>
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"></Space>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:background="#f2f2f2"
+            android:layout_height="wrap_content"
+            android:text="Add GST"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:id="@+id/adbtn"></Button>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"></Space>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:padding="2dp"
+            android:text="Remove GST"
+            android:layout_weight="1"
+            android:id="@+id/rmbtn"></Button></LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"></Space>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+        android:padding="2dp"
+        android:drawableRight="@drawable/ic_baseline_clear_24"
+
+        android:text="clear"
+            android:layout_weight="1"
+            android:id="@+id/clear"></Button>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"></Space>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#f2f2f2"
+            android:padding="2dp"
+
+
+            android:text="Share"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/ic_baseline_share_24"
+            android:id="@+id/share"></Button>
+    </LinearLayout>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"></Space>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg2"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#4d4846"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
+                android:text="IGST"></TextView>
+
+            <Space
+                android:layout_width="37dp"
+                android:layout_height="wrap_content"></Space>
+
+            <TextView
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:id="@+id/igst"></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#4d4846"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
+                android:text="CGST"></TextView>
+
+            <Space
+                android:layout_width="29dp"
+                android:layout_height="wrap_content"></Space>
+
+            <TextView
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:id="@+id/cgst"></TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="#4d4846"
+                android:fontFamily="sans-serif-medium"
+                android:padding="5dp"
+                android:text="SGST"></TextView>
+
+            <Space
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"></Space>
+
+            <TextView
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:id="@+id/sgst"></TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/nativeAdLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
